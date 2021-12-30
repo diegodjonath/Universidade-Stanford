@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap');
+
+
+* {
+    box-sizing: border-box;  
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-saiba_mais {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: #F19839;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url("../imagens/universidade-stanford.jpg"); 
+}
+
+header nav {
+    display: flex; /*Deixar a logo e a nav tudo alinhado na mesma linha*/
+    justify-content: space-between; /*separa a logo toda para esquerda e a nav toda para direita*/
+    margin: 0 30px; /*Ajsuta a logo e a a nav com espaçamentos da esqueda apra direita, e direita para esquerda*/
+}
+
+header nav p {
+    font-weight: bold;
+    color: white;
+}
+
+header nav ul {
+    list-style: none; /*tirar os pontinhos pretos da ul*/
+    display: flex; /*Deixar alinhado, lado a lado*/
+}
+
+header nav li {
+    margin: 0 15px; /*Dar espaçamento entre eles*/
+}
+
+.header-content {
+    max-width: 400px; /*ajustar a largura da imagem*/
+    margin: 150px auto; /*Descer a imagem e centralizar*/
+    text-align: center; /*Deiar o texto alinhado*/
+    color: white;
+}
+
+.header-content h1 {
+    margin-bottom: 10px; /*Diminuir o espaçamento entre h1 a tag p*/
+    font-size: 4rem;
+    color: white;
+}
+
+.pacotes {
+    /*background: #e5e5e5;*/
+    background: #C69E5D;
+    padding: 15px;
+}
+
+.pacotes .pacotes-cards{
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pacotes .pacotes-title {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+    color: white;
+    font-size: 1.8em;
+}
+
+.pacotes .card {
+    width: 250px;
+    height: 350px;
+    background: white;
+    border-radius: 24px 0px;
+    margin: 25px;
+    position: relative;
+}
+
+.pacotes .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+}
+ 
+.pacotes .card-content {
+    padding: 0 15px;
+}
+
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.pacotes .card-content ul li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    color: grey;
+    font-weight: bold;
+}
+
+.pacotes .card-content li svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.pacotes .card-content h1 {
+    font-size: 1rem;
+}
+
+.pacotes .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #9F4C48;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag-top p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.bloco{
+    background-color: #F9F6EF;
+    padding: 30px;
+    width: 100%;
+}
+
+.bloco h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+input{
+    background-color: #DDDDDD;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    padding: 0.6rem 1rem;
+    border-radius: 24px 0 24px 0;
+    color: #484848;
+}
+
+.form .btn-form{
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: #F19839;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form-dados{
+    display: flex;
+}
+
+.nome{
+    width: 40%;
+    justify-content: space-between;
+}
+
+.sobrenome{
+    width: 60%;
+}
+
+input[type=email]{
+    width: 100%;
+}
+
+.form-select{
+    background-color: #DDDDDD;
+    border: none;
+    margin: 5px 0;
+    padding: 0.6rem 1rem;
+    border-radius: 24px 0 24px 0;
+    color: #484848;
+    width: 20%;
+}
+
+
+textarea{
+    background-color: #DDDDDD;
+    border: none;
+    margin: 5px 0;
+    padding: 0.6rem 1rem;
+    border-radius: 24px 0 24px 0;
+    color: #484848;
+    resize: none;
+    width: 100%;
+    height: 170px;
+
+}
+
+
+
+
+
+
+/*Responsividade*/
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) {
+
+    body {
+        margin-bottom: 55px;
+    }
+
+    header nav ul {
+        position: fixed; /*fixar o menu responsivo*/
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        z-index: 99; /*quanto amior o conteudo mais dentro ele precisa ficar*/
+
+        background: #1D61D0;
+        color: white;
+        font-weight: bold;
+        height: 55px;
+
+        display: flex;
+        justify-content: center; 
+        align-items: center; /*centralizar o conteudo na vertical*/
+    }
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+

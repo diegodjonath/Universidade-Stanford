@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidade Stanford</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <img src="" alt="Logo Djonath"> -->
+            <p>Universidade Stanford</p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#alunos">Alunos</a></li>
+                <li><a href="#form">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div id="home" class="header-content">
+            <h1>Universidade Stanford</h1>
+            <p>Conheça a Universidade Stanford, veja a onde os maiores gênios da tecnologia adquiriu seus conhecimentos!</p>
+            <button class="btn-saiba_mais">Saiba mais</button>
+        </div>
+    </header>
+
+    <section id="alunos" class="pacotes">
+
+        <h1 class="pacotes-title">Saiba quem estudou com a gente:</h1>
+        <div class="pacotes-cards">
+            <div class="card">
+                <div class="card-tag-top">
+                    <p>Saiba mais</p>
+                </div>
+                <img class="card-image" src="../imagens/fundadoresdagoogle.png" alt="Fundadores da Google">
+                <div class="card-content">
+                    <h1> Os fundadores do Google!</h1>
+                    <ul>
+                        <li><i data-feather="star"></i>Larry Page e Sergey Brin</li>
+                        <li><i data-feather="aperture"></i>Google</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-tag-top">
+                    <p>Saiba mais</p>
+                </div>
+                <img class="card-image" src="../imagens/fundadoresdahp.png" alt="Fundadores da HP">
+                <div class="card-content">
+                    <h1> Os fundadores da HP!</h1>
+                    <ul>
+                        <li><i data-feather="star"></i>David Packard e Bill Hewlett</li>
+                        <li><i data-feather="printer"></i>HP</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-tag-top">
+                    <p>Saiba mais</p>
+                </div>
+                <img class="card-image" src="../imagens/fundadordomercadolivre.png" alt="Fundador do Mercado Livre">
+                <div class="card-content">
+                    <h1>O fundador do Mercado Livre!</h1>
+                    <ul>
+                        <li><i data-feather="star"></i>Marcos Galperin</li>
+                        <li><i data-feather="shopping-cart"></i>Mercado Livre</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="bloco">
+        <h1>Entre em contato: </h1>
+        <form action="" class="form" name="formulario"> 
+
+            <div class="form-dados">
+                <input class="nome" type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                <span class="error"><p id="nome_error"></p></span>
+
+                <input class="sobrenome" type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+                <span class="error"><p id="sobrenome_error"></p></span>
+            </div>
+
+            <input class="sobrenome" type="text" id="sobrenome1" name="sobrenome" placeholder="Digite seu sobrenome">
+            <span class="error"><p id="sobrenome_error"></p></span>
+
+            <input type="email" placeholder="Digite o seu melhor e-mail">
+
+            
+                <select class="form-select" id="selecionar">
+                    <option value="concurso">Concurso</option>
+                    <option value="imprensa">Imprensa</option>
+                    <option value="secretaria" selected>Secretaria</option>
+                    <option value="trabalhe-conosco">Trabalhe Conosco</option>
+                    <option value="outros">Outros</option>
+                </select>
+                <div class="form-option">
+                    <textarea id="menssagem" type="text" placeholder="Digite o assunto"></textarea>
+                </div>
+
+            <button type="submit" id="form" class="btn-form" onclick="enviarForm()">Enviar</button>
+        </form>
+    </div> 
+    <div>
+
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
