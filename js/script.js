@@ -14,33 +14,42 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Validação do formulário
 
-var nome = document.getElementById("nome");
-var sobrenome1 = document.getElementById("sobrenome1");
-
 function enviarForm(){
     
-    if (nome == null || nome == "") {
+    let nomes = document.getElementById("nomes").value;
+    let sobrenomes = document.getElementById("sobrenomes").value;
+    let email = document.getElementById("email");
+    
+
+    if (nomes == null || nomes == "") {
         
         nomeError = "Por favor, insira o nome";
         document.getElementById("nome_error").innerHTML = nomeError;
-
-        teste = nome
-        console.log(nome_error)
-        return false;
+        
+        console.log(nomes)
         
     }
     
-    else if (sobrenome == null || sobrenome == "") {
+    if (sobrenomes == null || sobrenomes == "") {
         
         sobrenomeError = "Por favor, insira o sobrenome";
         document.getElementById("sobrenome_error").innerHTML = sobrenomeError;
-        return false;
+        
+        console.log(sobrenomes)
+        
     }
 
-    else {
-        return true;
+    if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1 || (email.value.indexOf(".") - email.value.indexOf("@") == 1)) {
+
+        emailError = "Por favor, insira o email correto!";
+        document.getElementById("email_error").innerHTML = emailError;
+
+        
     }
+
 }
+
+
 
 // Não dar reload no formulário
 document.querySelector("form")
